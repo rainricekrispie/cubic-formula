@@ -23,5 +23,5 @@ form?.addEventListener("submit", (event) => {
     console.log(q);
     console.log(discriminant);
     console.log(root1);
-
+    //hi
 })
