@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cubic Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, qui.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officiis accusantium itaque 
-        ut temporibus accusamus debitis neque ipsum quasi labore.</p>
-    <div class="fdiv">
-        <form>
-            <input type="number">
-            <input type="number">
-            <input type="number">
-            <input type="submit">
+    <div class="maindiv">
+        <h1>
+            Cubic Formula Solver
+            <br />
+            ax&#179; + bx&#178; + cx + d = 0
+        </h1>
+        <br />
+        <form id="mainform">
+            <input for="aname" name="aname" type="number" placeholder="Input A">
+            <input for="bname" name="bname" type="number" placeholder="Input B">
+            <input for="cname" name="cname" type="number" placeholder="Input C">
+            <input for="dname" name="dname" type="number" placeholder="Input D">
+            <input type="submit" class="submit-button" value="Calculate">
         </form>
     </div>
-    <div></div>
     <script src="script.ts"></script>
 </body>
+
 </html>
