@@ -10,10 +10,10 @@ form?.addEventListener("submit", (event) => {
     const c: number = Number(formData.get("cname"));
     const d: number = Number(formData.get("dname"));
     
-    const p: number = (3 * a * c) - (b ^ 2) / (3 * (a ^ 2));
-    const q: number = (27* a * d) - (9 * a * b * c) + (2 * (b ^ 3)) / (27 * (a ^ 3));
+    const p: number = ((3 * a * c) - (b ** 2)) / (3 * (a ** 2));
+    const q: number = ((27 * a * d) - (9 * a * b * c) + (2 * (b ** 3))) / (27 * (a ** 3));
+    const discriminant: number = ((q / 2) ** 2) + ((p / 3) ** 3);
     
-    const discriminant: number = (q / 2) ^ 2 + (p / 3) ^ 3;
     const u: number = Math.cbrt((-q / 2) + Math.sqrt(discriminant));
     const v: number = Math.cbrt((-q / 2) - Math.sqrt(discriminant));
     
