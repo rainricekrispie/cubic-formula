@@ -19,12 +19,25 @@
         </h1>
         <br />
         <form id="mainform">
-            <input for="aname" name="aname" type="number" placeholder="Input A">
-            <input for="bname" name="bname" type="number" placeholder="Input B">
-            <input for="cname" name="cname" type="number" placeholder="Input C">
-            <input for="dname" name="dname" type="number" placeholder="Input D">
+            <input for="aname" name="aname" type="number" placeholder="Input A" required>
+            <input for="bname" name="bname" type="number" placeholder="Input B" required>
+            <input for="cname" name="cname" type="number" placeholder="Input C" required>
+            <input for="dname" name="dname" type="number" placeholder="Input D" required>
             <input type="submit" class="submit-button" value="Calculate">
         </form>
+        <br/>
+        <div id="result">
+          <table>
+            <tr><th>p</th><th id="pv">100</th></tr>
+            <tr><th>q</th><th id="qv">100</th></tr>
+            <tr><th>discriminant</th><th id="dv">100</th></tr>
+            <tr id="v"><td>Value</td><td>X</td>
+            </tr><tr><th>Root1</th><th id="r1v">100</th></tr>
+            <tr><th>Root2</th><th id="r2v">100</th>
+            </tr><tr><th>Root3</th><th id="r3v">100</th></tr>
+          </table>
+            <canvas id="graph" width="400" height="400"></canvas>
+        </div>
     </div>
     <script src="script.ts"></script>
 </body>
