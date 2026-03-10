@@ -83,6 +83,7 @@ form input:hover {
 }
 
 #result {
+    margin-top:10px;
     background-color: white;
     display: none;
     align-items: center;
